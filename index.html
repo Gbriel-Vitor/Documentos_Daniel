@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de PDFS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .btn-download {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0062ff; /* Azul tecnológico */
+            color: white;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn-download:hover {
+            background-color: #004cc7;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,98,255,0.3);
+        }
+
+        .btn-download i {
+            font-size: 1.2rem;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Estilo para PDFs específicos de publicidade */
+        .ads-tech { background-color: #28a745; }
+        .ads-tech:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Documentos</h2>
+    
+    <a href="Advanced - Sindico Profissional.pdf" target="_blank" class="btn-download">
+        <div class="file-info">
+            <i class="fas fa-file-pdf"></i>
+            <span>Advanced - Sindico Profissional</span>
+        </div>
+        <i class="fas fa-download"></i>
+    </a>
+
+    <a href="Curriculo Síndico SINDCORPORE.pdf" target="_blank" class="btn-download">
+        <div class="file-info">
+            <i class="fas fa-chart-line"></i>
+            <span>Curriculum Síndico SINDCORPORE</span>
+        </div>
+        <i class="fas fa-download"></i>
+    </a>
+
+    <a href="Metodologia de Trabalho SindCorpore.pdf" target="_blank" class="btn-download">
+        <div class="file-info">
+            <i class="fas fa-database"></i>
+            <span>Metodologia de Trabalho SindCorpore</span>
+        </div>
+        <i class="fas fa-download"></i>
+    </a>
+
+    <a href="Proposta Sindcorpore.pdf" target="_blank" class="btn-download ads-tech">
+        <div class="file-info">
+            <i class="fas fa-ad"></i>
+            <span>Proposta Sindcorpore</span>
+        </div>
+        <i class="fas fa-download"></i>
+    </a>
+
+    <a href="Sindicompany - Sindico Profissional.pdf" target="_blank" class="btn-download">
+        <div class="file-info">
+            <i class="fas fa-shield-halved"></i>
+            <span>Proposta Sindicompany</span>
+        </div>
+        <i class="fas fa-download"></i>
+    </a>
+</div>
+
+</body>
+</html>
